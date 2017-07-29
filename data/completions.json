@@ -1,0 +1,8 @@
+[
+  {
+    "name": "concat",
+    "description": "Concatenates a list of lists into one list.",
+    "module": "Prelude",
+    "type": "function"
+  }
+]
