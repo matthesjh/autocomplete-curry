@@ -1,8 +1,37 @@
 [
   {
+    "name": "Bool",
+    "description": "",
+    "module": "Prelude",
+    "type": "type",
+    "type-sig": ""
+  },
+  {
     "name": "concat",
     "description": "Concatenates a list of lists into one list.",
     "module": "Prelude",
-    "type": "function"
+    "type": "function",
+    "type-sig": "[[a]] -> [a]"
+  },
+  {
+    "name": "concatMap",
+    "description": "Maps a function from elements to lists and merges the result into one list.",
+    "module": "Prelude",
+    "type": "function",
+    "type-sig": "(a -> [b]) -> [a] -> [b]"
+  },
+  {
+    "name": "False",
+    "description": "",
+    "module": "Prelude",
+    "type": "tag",
+    "type-sig": "Bool"
+  },
+  {
+    "name": "True",
+    "description": "",
+    "module": "Prelude",
+    "type": "tag",
+    "type-sig": "Bool"
   }
 ]
