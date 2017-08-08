@@ -1,6 +1,6 @@
 {
   "name": "autocomplete-curry",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Curry autocomplete provider for Atom",
   "keywords": [
     "atom",
