@@ -19,7 +19,7 @@
     "for-direction": "error",
     "getter-return": ["error", {"allowImplicit": false}],
     "no-template-curly-in-string": "error",
-    "accessor-pairs": "error",
+    "accessor-pairs": ["error", {"getWithoutSet": false, "setWithoutGet": true}],
     "array-callback-return": "error",
     "curly": ["error", "all"],
     "default-case": "error",
@@ -77,6 +77,7 @@
     "prefer-arrow-callback": "error",
     "prefer-const": "error",
     "prefer-numeric-literals": "error",
-    "prefer-template": "error"
+    "prefer-template": "error",
+    "template-curly-spacing": ["error", "never"]
   }
 }
