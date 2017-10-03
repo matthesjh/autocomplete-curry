@@ -1,5 +1,6 @@
 {
   "env": {
+    "atomtest": true,
     "browser": true,
     "es6": true,
     "jasmine": true,
@@ -7,10 +8,7 @@
   },
   "extends": "eslint:recommended",
   "globals": {
-    "atom": true,
-    "runs": true,
-    "waitsFor": true,
-    "waitsForPromise": true
+    "atom": true
   },
   "parserOptions": {
     "sourceType": "module"
