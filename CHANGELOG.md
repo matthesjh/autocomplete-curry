@@ -1,3 +1,7 @@
+## 0.1.3 (2017-10-21)
+
+* Enabled the `filterSuggestions` flag to use fuzzy filtering and sorting
+
 ## 0.1.2 (2017-10-03)
 
 * Upgraded to latest `autocomplete-plus` API version
