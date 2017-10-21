@@ -1,4 +1,4 @@
-## 0.1.3 (2017-10-21)
+## 0.2.0 (2017-10-21)
 
 * Enabled the `filterSuggestions` flag to use fuzzy filtering and sorting
 
