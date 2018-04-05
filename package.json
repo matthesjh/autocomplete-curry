@@ -17,12 +17,12 @@
   },
   "license": "MIT",
   "engines": {
-    "atom": ">=1.18.0 <2.0.0"
+    "atom": ">=1.24.0 <2.0.0"
   },
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
-        "3.0.0": "getProvider"
+        "4.0.0": "getProvider"
       }
     }
   },
