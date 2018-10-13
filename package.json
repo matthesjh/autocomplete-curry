@@ -2,12 +2,14 @@
   "name": "autocomplete-curry",
   "version": "0.2.1",
   "description": "Curry autocomplete provider for Atom",
+  "author": "Jan-Hendrik Matthes",
   "keywords": [
     "atom",
     "autocompletion",
     "curry"
   ],
   "main": "./lib/main",
+  "homepage": "https://github.com/matthesjh/autocomplete-curry",
   "repository": {
     "type": "git",
     "url": "https://github.com/matthesjh/autocomplete-curry.git"
