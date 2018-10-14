@@ -1,0 +1,53 @@
+[
+  {
+    "name": "<package_name>",
+    "version": "<version_number>",
+    "description": "<text>",
+    "docUrl": "<url>",
+    "modules": [
+      {
+        "name": "<module_name>",
+        "description": "<text>",
+        "docUrl": "<url>",
+        "typeClasses": [
+          {
+            "name": "<type_class_name>",
+            "description": "<text>",
+            "docUrl": "<url>",
+            "functions": [
+              {
+                "name": "<function_name>",
+                "description": "<text>",
+                "typeSig": "<type_signature>",
+                "docUrl": "<url>"
+              }
+            ]
+          }
+        ],
+        "types": [
+          {
+            "name": "<type_name>",
+            "description": "<text>",
+            "docUrl": "<url>",
+            "constructors": [
+              {
+                "name": "<constructor_name>",
+                "description": "<text>",
+                "typeSig": "<type_signature>",
+                "docUrl": "<url>"
+              }
+            ]
+          }
+        ],
+        "functions": [
+          {
+            "name": "<function_name>",
+            "description": "<text>",
+            "typeSig": "<type_signature>",
+            "docUrl": "<url>"
+          }
+        ]
+      }
+    ]
+  }
+]
