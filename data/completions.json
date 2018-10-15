@@ -9,9 +9,1191 @@
         "name": "Prelude",
         "description": "The standard prelude of Curry (with type classes). All top-level functions, data types, classes and methods defined in this module are always available in any Curry program.",
         "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html",
-        "typeClasses": [],
-        "types": [],
-        "functions": []
+        "typeClasses": [
+          {
+            "name": "Bounded",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Bounded",
+            "functions": [
+              {
+                "name": "maxBound",
+                "description": "",
+                "typeSig": "a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#maxBound"
+              },
+              {
+                "name": "minBound",
+                "description": "",
+                "typeSig": "a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#minBound"
+              }
+            ]
+          },
+          {
+            "name": "Enum",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Enum",
+            "functions": [
+              {
+                "name": "enumFrom",
+                "description": "",
+                "typeSig": "a -> [a]",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#enumFrom"
+              },
+              {
+                "name": "enumFromThen",
+                "description": "",
+                "typeSig": "a -> a -> [a]",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#enumFromThen"
+              },
+              {
+                "name": "enumFromThenTo",
+                "description": "",
+                "typeSig": "a -> a -> a -> [a]",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#enumFromThenTo"
+              },
+              {
+                "name": "enumFromTo",
+                "description": "",
+                "typeSig": "a -> a -> [a]",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#enumFromTo"
+              },
+              {
+                "name": "fromEnum",
+                "description": "",
+                "typeSig": "a -> Int",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#fromEnum"
+              },
+              {
+                "name": "pred",
+                "description": "",
+                "typeSig": "a -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#pred"
+              },
+              {
+                "name": "succ",
+                "description": "",
+                "typeSig": "a -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#succ"
+              },
+              {
+                "name": "toEnum",
+                "description": "",
+                "typeSig": "Int -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#toEnum"
+              }
+            ]
+          },
+          {
+            "name": "Eq",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Eq",
+            "functions": []
+          },
+          {
+            "name": "Fractional",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Fractional",
+            "functions": [
+              {
+                "name": "fromFloat",
+                "description": "",
+                "typeSig": "Float -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#fromFloat"
+              },
+              {
+                "name": "recip",
+                "description": "",
+                "typeSig": "a -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#recip"
+              }
+            ]
+          },
+          {
+            "name": "Functor",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Functor",
+            "functions": [
+              {
+                "name": "fmap",
+                "description": "",
+                "typeSig": "(a -> b) -> f a -> f b",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#fmap"
+              }
+            ]
+          },
+          {
+            "name": "Integral",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Integral",
+            "functions": [
+              {
+                "name": "div",
+                "description": "",
+                "typeSig": "a -> a -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#div"
+              },
+              {
+                "name": "divMod",
+                "description": "",
+                "typeSig": "a -> a -> (a, a)",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#divMod"
+              },
+              {
+                "name": "mod",
+                "description": "",
+                "typeSig": "a -> a -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#mod"
+              },
+              {
+                "name": "quot",
+                "description": "",
+                "typeSig": "a -> a -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#quot"
+              },
+              {
+                "name": "quotRem",
+                "description": "",
+                "typeSig": "a -> a -> (a, a)",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#quotRem"
+              },
+              {
+                "name": "rem",
+                "description": "",
+                "typeSig": "a -> a -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#rem"
+              }
+            ]
+          },
+          {
+            "name": "Monad",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Monad",
+            "functions": [
+              {
+                "name": "fail",
+                "description": "",
+                "typeSig": "String -> m a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#fail"
+              },
+              {
+                "name": "return",
+                "description": "",
+                "typeSig": "a -> m a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#return"
+              }
+            ]
+          },
+          {
+            "name": "Num",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Num",
+            "functions": [
+              {
+                "name": "abs",
+                "description": "",
+                "typeSig": "a -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#abs"
+              },
+              {
+                "name": "fromInt",
+                "description": "",
+                "typeSig": "Int -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#fromInt"
+              },
+              {
+                "name": "negate",
+                "description": "",
+                "typeSig": "a -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#negate"
+              },
+              {
+                "name": "signum",
+                "description": "",
+                "typeSig": "a -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#signum"
+              }
+            ]
+          },
+          {
+            "name": "Ord",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Ord",
+            "functions": [
+              {
+                "name": "compare",
+                "description": "",
+                "typeSig": "a -> a -> Ordering",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#compare"
+              },
+              {
+                "name": "max",
+                "description": "",
+                "typeSig": "a -> a -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#max"
+              },
+              {
+                "name": "min",
+                "description": "",
+                "typeSig": "a -> a -> a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#min"
+              }
+            ]
+          },
+          {
+            "name": "Read",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Read",
+            "functions": [
+              {
+                "name": "readList",
+                "description": "",
+                "typeSig": "ReadS [a]",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#readList"
+              },
+              {
+                "name": "readsPrec",
+                "description": "",
+                "typeSig": "Int -> ReadS a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#readsPrec"
+              }
+            ]
+          },
+          {
+            "name": "Real",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Real",
+            "functions": []
+          },
+          {
+            "name": "Show",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Show",
+            "functions": [
+              {
+                "name": "show",
+                "description": "",
+                "typeSig": "a -> String",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#show"
+              },
+              {
+                "name": "showList",
+                "description": "",
+                "typeSig": "[a] -> ShowS",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#showList"
+              },
+              {
+                "name": "showsPrec",
+                "description": "",
+                "typeSig": "Int -> a -> ShowS",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#showsPrec"
+              }
+            ]
+          }
+        ],
+        "types": [
+          {
+            "name": "Bool",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Bool",
+            "constructors": [
+              {
+                "name": "False",
+                "description": "",
+                "typeSig": "Bool",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#False_CONS"
+              },
+              {
+                "name": "True",
+                "description": "",
+                "typeSig": "Bool",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#True_CONS"
+              }
+            ]
+          },
+          {
+            "name": "Char",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Char",
+            "constructors": []
+          },
+          {
+            "name": "DET",
+            "description": "Identity type synonym used to mark deterministic operations.",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#DET",
+            "constructors": []
+          },
+          {
+            "name": "Either",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Either",
+            "constructors": [
+              {
+                "name": "Left",
+                "description": "",
+                "typeSig": "a -> Either a b",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Left_CONS"
+              },
+              {
+                "name": "Right",
+                "description": "",
+                "typeSig": "b -> Either a b",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Right_CONS"
+              }
+            ]
+          },
+          {
+            "name": "Float",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Float",
+            "constructors": []
+          },
+          {
+            "name": "Int",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Int",
+            "constructors": []
+          },
+          {
+            "name": "IO",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#IO",
+            "constructors": []
+          },
+          {
+            "name": "IOError",
+            "description": "The (abstract) type of error values. Currently, it distinguishes between general IO errors, user-generated errors (see 'userError'), failures and non-determinism errors during IO computations. These errors can be caught by 'catch' and shown by 'showError'. Each error contains a string shortly explaining the error. This type might be extended in the future to distinguish further error situations.",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#IOError",
+            "constructors": [
+              {
+                "name": "FailError",
+                "description": "",
+                "typeSig": "String -> IOError",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#FailError_CONS"
+              },
+              {
+                "name": "IOError",
+                "description": "",
+                "typeSig": "String -> IOError",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#IOError_CONS"
+              },
+              {
+                "name": "NondetError",
+                "description": "",
+                "typeSig": "String -> IOError",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#NondetError_CONS"
+              },
+              {
+                "name": "UserError",
+                "description": "",
+                "typeSig": "String -> IOError",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#UserError_CONS"
+              }
+            ]
+          },
+          {
+            "name": "Maybe",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Maybe",
+            "constructors": [
+              {
+                "name": "Just",
+                "description": "",
+                "typeSig": "a -> Maybe a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Just_CONS"
+              },
+              {
+                "name": "Nothing",
+                "description": "",
+                "typeSig": "Maybe a",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Nothing_CONS"
+              }
+            ]
+          },
+          {
+            "name": "Ordering",
+            "description": "Ordering type. Useful as a result of comparison functions.",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Ordering",
+            "constructors": [
+              {
+                "name": "EQ",
+                "description": "",
+                "typeSig": "Ordering",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#EQ_CONS"
+              },
+              {
+                "name": "GT",
+                "description": "",
+                "typeSig": "Ordering",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#GT_CONS"
+              },
+              {
+                "name": "LT",
+                "description": "",
+                "typeSig": "Ordering",
+                "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#LT_CONS"
+              }
+            ]
+          },
+          {
+            "name": "ReadS",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#ReadS",
+            "constructors": []
+          },
+          {
+            "name": "ShowS",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#ShowS",
+            "constructors": []
+          },
+          {
+            "name": "String",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#String",
+            "constructors": []
+          },
+          {
+            "name": "Success",
+            "description": "",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#Success",
+            "constructors": []
+          }
+        ],
+        "functions": [
+          {
+            "name": "all",
+            "description": "Is a given predicate satisfied by all elements in a list?",
+            "typeSig": "(a -> Bool) -> [a] -> Bool",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#all"
+          },
+          {
+            "name": "and",
+            "description": "Computes the conjunction of a Boolean list.",
+            "typeSig": "[Bool] -> Bool",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#and"
+          },
+          {
+            "name": "any",
+            "description": "Is there an element in a list satisfying a given predicate?",
+            "typeSig": "(a -> Bool) -> [a] -> Bool",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#any"
+          },
+          {
+            "name": "anyOf",
+            "description": "",
+            "typeSig": "[a] -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#anyOf"
+          },
+          {
+            "name": "appendFile",
+            "description": "An action that appends a string to a file. It behaves like writeFile if the file does not exist.",
+            "typeSig": "String -> String -> IO ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#appendFile"
+          },
+          {
+            "name": "apply",
+            "description": "",
+            "typeSig": "(a -> b) -> a -> b",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#apply"
+          },
+          {
+            "name": "asTypeOf",
+            "description": "",
+            "typeSig": "a -> a -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#asTypeOf"
+          },
+          {
+            "name": "boundedEnumFrom",
+            "description": "",
+            "typeSig": "(Enum a, Bounded a) => a -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#boundedEnumFrom"
+          },
+          {
+            "name": "boundedEnumFromThen",
+            "description": "",
+            "typeSig": "(Enum a, Bounded a) => a -> a -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#boundedEnumFromThen"
+          },
+          {
+            "name": "break",
+            "description": "(break p xs) is equivalent to (takeWhile (not.p) xs, dropWhile (not.p) xs). Thus, it breaks a list at the first occurrence of an element satisfying p.",
+            "typeSig": "(a -> Bool) -> [a] -> ([a], [a])",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#break"
+          },
+          {
+            "name": "catch",
+            "description": "Catches a possible error or failure during the execution of an I/O action. `(catch act errfun)` executes the I/O action `act`. If an exception or failure occurs during this I/O action, the function `errfun` is applied to the error value.",
+            "typeSig": "IO a -> (IOError -> IO a) -> IO a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#catch"
+          },
+          {
+            "name": "chr",
+            "description": "Converts a Unicode value into a character, fails iff the value is out of bounds",
+            "typeSig": "Int -> Char",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#chr"
+          },
+          {
+            "name": "concat",
+            "description": "Concatenates a list of lists into one list.",
+            "typeSig": "[[a]] -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#concat"
+          },
+          {
+            "name": "concatMap",
+            "description": "Maps a function from elements to lists and merges the result into one list.",
+            "typeSig": "(a -> [b]) -> [a] -> [b]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#concatMap"
+          },
+          {
+            "name": "cond",
+            "description": "",
+            "typeSig": "Bool -> a -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#cond"
+          },
+          {
+            "name": "const",
+            "description": "Constant function.",
+            "typeSig": "a -> b -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#const"
+          },
+          {
+            "name": "curry",
+            "description": "Converts an uncurried function to a curried function.",
+            "typeSig": "((a, b) -> c) -> a -> b -> c",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#curry"
+          },
+          {
+            "name": "done",
+            "description": "The empty IO action that returns nothing.",
+            "typeSig": "IO ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#done"
+          },
+          {
+            "name": "doSolve",
+            "description": "Solves a constraint as an I/O action. Note: the constraint should be always solvable in a deterministic way",
+            "typeSig": "Bool -> IO ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#doSolve"
+          },
+          {
+            "name": "drop",
+            "description": "Returns suffix without first n elements.",
+            "typeSig": "Int -> [a] -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#drop"
+          },
+          {
+            "name": "dropWhile",
+            "description": "Returns suffix without takeWhile prefix.",
+            "typeSig": "(a -> Bool) -> [a] -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#dropWhile"
+          },
+          {
+            "name": "either",
+            "description": "",
+            "typeSig": "(a -> c) -> (b -> c) -> Either a b -> c",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#either"
+          },
+          {
+            "name": "elem",
+            "description": "Element of a list?",
+            "typeSig": "Eq a => a -> [a] -> Bool",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#elem"
+          },
+          {
+            "name": "ensureNotFree",
+            "description": "Evaluates the argument to head normal form and returns it. Suspends until the result is bound to a non-variable term.",
+            "typeSig": "a -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#ensureNotFree"
+          },
+          {
+            "name": "ensureSpine",
+            "description": "Evaluates the argument to spine form and returns it. Suspends until the result is bound to a non-variable spine.",
+            "typeSig": "[a] -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#ensureSpine"
+          },
+          {
+            "name": "enumFromThenTo_",
+            "description": "Generates a sequence of integers with a particular in/decrement.",
+            "typeSig": "Int -> Int -> Int -> [Int]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#enumFromThenTo_"
+          },
+          {
+            "name": "enumFromThen_",
+            "description": "Generates an infinite sequence of integers with a particular in/decrement.",
+            "typeSig": "Int -> Int -> [Int]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#enumFromThen_"
+          },
+          {
+            "name": "enumFromTo_",
+            "description": "Generates a sequence of ascending integers.",
+            "typeSig": "Int -> Int -> [Int]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#enumFromTo_"
+          },
+          {
+            "name": "enumFrom_",
+            "description": "Generates an infinite sequence of ascending integers.",
+            "typeSig": "Int -> [Int]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#enumFrom_"
+          },
+          {
+            "name": "error",
+            "description": "Aborts the execution with an error message.",
+            "typeSig": "String -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#error"
+          },
+          {
+            "name": "failed",
+            "description": "A non-reducible polymorphic function. It is useful to express a failure in a search branch of the execution. It could be defined by: `failed = head []`",
+            "typeSig": "a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#failed"
+          },
+          {
+            "name": "filter",
+            "description": "Filters all elements satisfying a given predicate in a list.",
+            "typeSig": "(a -> Bool) -> [a] -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#filter"
+          },
+          {
+            "name": "flip",
+            "description": "(flip f) is identical to f but with the order of arguments reversed.",
+            "typeSig": "(a -> b -> c) -> b -> a -> c",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#flip"
+          },
+          {
+            "name": "foldIO",
+            "description": "Folds a list of elements using an binary I/O action and a value for the empty list.",
+            "typeSig": "(a -> b -> IO a) -> a -> [b] -> IO a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#foldIO"
+          },
+          {
+            "name": "foldl",
+            "description": "Accumulates all list elements by applying a binary operator from left to right. Thus,",
+            "typeSig": "(a -> b -> a) -> a -> [b] -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#foldl"
+          },
+          {
+            "name": "foldl1",
+            "description": "Accumulates a non-empty list from left to right.",
+            "typeSig": "(a -> a -> a) -> [a] -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#foldl1"
+          },
+          {
+            "name": "foldM",
+            "description": "Folds a list of elements using a binary monadic action and a value for the empty list.",
+            "typeSig": "Monad m => (a -> b -> m a) -> a -> [b] -> m a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#foldM"
+          },
+          {
+            "name": "foldr",
+            "description": "Accumulates all list elements by applying a binary operator from right to left. Thus,",
+            "typeSig": "(a -> b -> b) -> b -> [a] -> b",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#foldr"
+          },
+          {
+            "name": "foldr1",
+            "description": "Accumulates a non-empty list from right to left:",
+            "typeSig": "(a -> a -> a) -> [a] -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#foldr1"
+          },
+          {
+            "name": "forIO",
+            "description": "Like `mapIO`, but with flipped arguments.",
+            "typeSig": "[a] -> (a -> IO b) -> IO [b]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#forIO"
+          },
+          {
+            "name": "forIO_",
+            "description": "Like `mapIO_`, but with flipped arguments.",
+            "typeSig": "[a] -> (a -> IO b) -> IO ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#forIO_"
+          },
+          {
+            "name": "forM",
+            "description": "Like `mapM`, but with flipped arguments.",
+            "typeSig": "Monad m => [a] -> (a -> m b) -> m [b]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#forM"
+          },
+          {
+            "name": "forM_",
+            "description": "Like `mapM_`, but with flipped arguments.",
+            "typeSig": "Monad m => [a] -> (a -> m b) -> m ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#forM_"
+          },
+          {
+            "name": "fst",
+            "description": "Selects the first component of a pair.",
+            "typeSig": "(a, b) -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#fst"
+          },
+          {
+            "name": "getChar",
+            "description": "An action that reads a character from standard output and returns it.",
+            "typeSig": "IO Char",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#getChar"
+          },
+          {
+            "name": "getLine",
+            "description": "Action to read a line from stdin.",
+            "typeSig": "IO String",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#getLine"
+          },
+          {
+            "name": "groundNormalForm",
+            "description": "Evaluates the argument to ground normal form and returns it. Suspends as long as the normal form of the argument is not ground.",
+            "typeSig": "a -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#groundNormalForm"
+          },
+          {
+            "name": "head",
+            "description": "Computes the first element of a list.",
+            "typeSig": "[a] -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#head"
+          },
+          {
+            "name": "id",
+            "description": "Identity function.",
+            "typeSig": "a -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#id"
+          },
+          {
+            "name": "if_then_else",
+            "description": "The standard conditional. It suspends if the condition is a free variable.",
+            "typeSig": "Bool -> a -> a -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#if_then_else"
+          },
+          {
+            "name": "ioError",
+            "description": "Raises an I/O exception with a given error value.",
+            "typeSig": "IOError -> IO a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#ioError"
+          },
+          {
+            "name": "iterate",
+            "description": "Infinite list of repeated applications of a function f to an element x. Thus, `iterate f x = [x, f x, f (f x),...]`",
+            "typeSig": "(a -> a) -> a -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#iterate"
+          },
+          {
+            "name": "length",
+            "description": "Computes the length of a list.",
+            "typeSig": "[a] -> Int",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#length"
+          },
+          {
+            "name": "letrec",
+            "description": "",
+            "typeSig": "a -> a -> Bool",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#letrec"
+          },
+          {
+            "name": "lex",
+            "description": "",
+            "typeSig": "ReadS String",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#lex"
+          },
+          {
+            "name": "liftIO",
+            "description": "Apply a pure function to the result of an I/O action.",
+            "typeSig": "(a -> b) -> IO a -> IO b",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#liftIO"
+          },
+          {
+            "name": "liftM",
+            "description": "Apply a pure function to the result of a monadic action.",
+            "typeSig": "Monad m => (a -> b) -> m a -> m b",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#liftM"
+          },
+          {
+            "name": "liftM2",
+            "description": "Apply a pure binary function to the result of two monadic actions.",
+            "typeSig": "Monad m => (a -> b -> c) -> m a -> m b -> m c",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#liftM2"
+          },
+          {
+            "name": "lines",
+            "description": "Breaks a string into a list of lines where a line is terminated at a newline character. The resulting lines do not contain newline characters.",
+            "typeSig": "String -> [String]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#lines"
+          },
+          {
+            "name": "lookup",
+            "description": "Looks up a key in an association list.",
+            "typeSig": "Eq a => a -> [(a, b)] -> Maybe b",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#lookup"
+          },
+          {
+            "name": "map",
+            "description": "Map a function on all elements of a list.",
+            "typeSig": "(a -> b) -> [a] -> [b]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#map"
+          },
+          {
+            "name": "mapIO",
+            "description": "Maps an I/O action function on a list of elements. The results of all I/O actions are collected in a list.",
+            "typeSig": "(a -> IO b) -> [a] -> IO [b]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#mapIO"
+          },
+          {
+            "name": "mapIO_",
+            "description": "Maps an I/O action function on a list of elements. The results of all I/O actions are ignored.",
+            "typeSig": "(a -> IO b) -> [a] -> IO ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#mapIO_"
+          },
+          {
+            "name": "mapM",
+            "description": "Maps a monadic action function on a list of elements. The results of all monadic actions are collected in a list.",
+            "typeSig": "Monad m => (a -> m b) -> [a] -> m [b]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#mapM"
+          },
+          {
+            "name": "mapM_",
+            "description": "Maps a monadic action function on a list of elements. The results of all monadic actions are ignored.",
+            "typeSig": "Monad m => (a -> m b) -> [a] -> m ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#mapM_"
+          },
+          {
+            "name": "maybe",
+            "description": "",
+            "typeSig": "b -> (a -> b) -> Maybe a -> b",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#maybe"
+          },
+          {
+            "name": "negateFloat",
+            "description": "Unary minus on Floats. Usually written as \"-e\".",
+            "typeSig": "Float -> Float",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#negateFloat"
+          },
+          {
+            "name": "negate_",
+            "description": "Unary minus. Usually written as \"- e\".",
+            "typeSig": "Int -> Int",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#negate_"
+          },
+          {
+            "name": "normalForm",
+            "description": "Evaluates the argument to normal form and returns it.",
+            "typeSig": "a -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#normalForm"
+          },
+          {
+            "name": "not",
+            "description": "Negation on Booleans.",
+            "typeSig": "Bool -> Bool",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#not"
+          },
+          {
+            "name": "notElem",
+            "description": "Not element of a list?",
+            "typeSig": "Eq a => a -> [a] -> Bool",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#notElem"
+          },
+          {
+            "name": "null",
+            "description": "Is a list empty?",
+            "typeSig": "[a] -> Bool",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#null"
+          },
+          {
+            "name": "or",
+            "description": "Computes the disjunction of a Boolean list.",
+            "typeSig": "[Bool] -> Bool",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#or"
+          },
+          {
+            "name": "ord",
+            "description": "Converts a character into its ASCII value.",
+            "typeSig": "Char -> Int",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#ord"
+          },
+          {
+            "name": "otherwise",
+            "description": "Useful name for the last condition in a sequence of conditional equations.",
+            "typeSig": "Bool",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#otherwise"
+          },
+          {
+            "name": "print",
+            "description": "Converts a term into a string and prints it.",
+            "typeSig": "Show a => a -> IO ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#print"
+          },
+          {
+            "name": "putChar",
+            "description": "An action that puts its character argument on standard output.",
+            "typeSig": "Char -> IO ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#putChar"
+          },
+          {
+            "name": "putStr",
+            "description": "Action to print a string on stdout.",
+            "typeSig": "String -> IO ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#putStr"
+          },
+          {
+            "name": "putStrLn",
+            "description": "Action to print a string with a newline on stdout.",
+            "typeSig": "String -> IO ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#putStrLn"
+          },
+          {
+            "name": "read",
+            "description": "",
+            "typeSig": "Read a => String -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#read"
+          },
+          {
+            "name": "readFile",
+            "description": "An action that (lazily) reads a file and returns its contents.",
+            "typeSig": "String -> IO String",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#readFile"
+          },
+          {
+            "name": "readParen",
+            "description": "",
+            "typeSig": "Bool -> ReadS a -> ReadS a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#readParen"
+          },
+          {
+            "name": "reads",
+            "description": "",
+            "typeSig": "Read a => ReadS a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#reads"
+          },
+          {
+            "name": "repeat",
+            "description": "Infinite list where all elements have the same value. Thus, `repeat x = [x, x, x,...]`",
+            "typeSig": "a -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#repeat"
+          },
+          {
+            "name": "replicate",
+            "description": "List of length n where all elements have the same value.",
+            "typeSig": "Int -> a -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#replicate"
+          },
+          {
+            "name": "reverse",
+            "description": "Reverses the order of all elements in a list.",
+            "typeSig": "[a] -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#reverse"
+          },
+          {
+            "name": "seq",
+            "description": "Evaluates the first argument to head normal form (which could also be a free variable) and returns the second argument.",
+            "typeSig": "b -> a -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#seq"
+          },
+          {
+            "name": "sequence",
+            "description": "Evaluates a sequence of monadic actions and collects all results in a list.",
+            "typeSig": "Monad m => [m a] -> m [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#sequence"
+          },
+          {
+            "name": "sequenceIO",
+            "description": "Executes a sequence of I/O actions and collects all results in a list.",
+            "typeSig": "[IO a] -> IO [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#sequenceIO"
+          },
+          {
+            "name": "sequenceIO_",
+            "description": "Executes a sequence of I/O actions and ignores the results.",
+            "typeSig": "[IO a] -> IO ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#sequenceIO_"
+          },
+          {
+            "name": "sequence_",
+            "description": "Evaluates a sequence of monadic actions and ignores the results.",
+            "typeSig": "Monad m => [m a] -> m ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#sequence_"
+          },
+          {
+            "name": "showChar",
+            "description": "",
+            "typeSig": "Char -> ShowS",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#showChar"
+          },
+          {
+            "name": "showError",
+            "description": "Shows an error values as a string.",
+            "typeSig": "IOError -> String",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#showError"
+          },
+          {
+            "name": "showParen",
+            "description": "",
+            "typeSig": "Bool -> ShowS -> ShowS",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#showParen"
+          },
+          {
+            "name": "shows",
+            "description": "",
+            "typeSig": "Show a => a -> ShowS",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#shows"
+          },
+          {
+            "name": "showString",
+            "description": "",
+            "typeSig": "String -> ShowS",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#showString"
+          },
+          {
+            "name": "snd",
+            "description": "Selects the second component of a pair.",
+            "typeSig": "(a, b) -> b",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#snd"
+          },
+          {
+            "name": "solve",
+            "description": "Enforce a Boolean condition to be true. The computation fails if the argument evaluates to `False`.",
+            "typeSig": "Bool -> Bool",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#solve"
+          },
+          {
+            "name": "span",
+            "description": "(span p xs) is equivalent to (takeWhile p xs, dropWhile p xs)",
+            "typeSig": "(a -> Bool) -> [a] -> ([a], [a])",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#span"
+          },
+          {
+            "name": "splitAt",
+            "description": "(splitAt n xs) is equivalent to (take n xs, drop n xs)",
+            "typeSig": "Int -> [a] -> ([a], [a])",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#splitAt"
+          },
+          {
+            "name": "success",
+            "description": "The always satisfiable constraint.",
+            "typeSig": "Success",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#success"
+          },
+          {
+            "name": "tail",
+            "description": "Computes the remaining elements of a list.",
+            "typeSig": "[a] -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#tail"
+          },
+          {
+            "name": "take",
+            "description": "Returns prefix of length n.",
+            "typeSig": "Int -> [a] -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#take"
+          },
+          {
+            "name": "takeWhile",
+            "description": "Returns longest prefix with elements satisfying a predicate.",
+            "typeSig": "(a -> Bool) -> [a] -> [a]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#takeWhile"
+          },
+          {
+            "name": "uncurry",
+            "description": "Converts an curried function to a function on pairs.",
+            "typeSig": "(a -> b -> c) -> (a, b) -> c",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#uncurry"
+          },
+          {
+            "name": "unknown",
+            "description": "Evaluates to a fresh free variable.",
+            "typeSig": "a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#unknown"
+          },
+          {
+            "name": "unless",
+            "description": "Performs an `IO` action unless the condition is met.",
+            "typeSig": "Bool -> IO () -> IO ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#unless"
+          },
+          {
+            "name": "unlessM",
+            "description": "Performs a monadic action unless the condition is met.",
+            "typeSig": "Monad m => Bool -> m () -> m ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#unlessM"
+          },
+          {
+            "name": "unlines",
+            "description": "Concatenates a list of strings with terminating newlines.",
+            "typeSig": "[String] -> String",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#unlines"
+          },
+          {
+            "name": "until",
+            "description": "Repeats application of a function until a predicate holds.",
+            "typeSig": "(a -> Bool) -> (a -> a) -> a -> a",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#until"
+          },
+          {
+            "name": "unwords",
+            "description": "Concatenates a list of strings with a blank between two strings.",
+            "typeSig": "[String] -> String",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#unwords"
+          },
+          {
+            "name": "unzip",
+            "description": "Transforms a list of pairs into a pair of lists.",
+            "typeSig": "[(a, b)] -> ([a], [b])",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#unzip"
+          },
+          {
+            "name": "unzip3",
+            "description": "Transforms a list of triples into a triple of lists.",
+            "typeSig": "[(a, b, c)] -> ([a], [b], [c])",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#unzip3"
+          },
+          {
+            "name": "userError",
+            "description": "A user error value is created by providing a description of the error situation as a string.",
+            "typeSig": "String -> IOError",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#userError"
+          },
+          {
+            "name": "when",
+            "description": "Performs an `IO` action when the condition is met.",
+            "typeSig": "Bool -> IO () -> IO ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#when"
+          },
+          {
+            "name": "whenM",
+            "description": "Performs a monadic action when the condition is met.",
+            "typeSig": "Monad m => Bool -> m () -> m ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#whenM"
+          },
+          {
+            "name": "words",
+            "description": "Breaks a string into a list of words where the words are delimited by white spaces.",
+            "typeSig": "String -> [String]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#words"
+          },
+          {
+            "name": "writeFile",
+            "description": "An action that writes a file.",
+            "typeSig": "String -> String -> IO ()",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#writeFile"
+          },
+          {
+            "name": "zip",
+            "description": "Joins two lists into one list of pairs. If one input list is shorter than the other, the additional elements of the longer list are discarded.",
+            "typeSig": "[a] -> [b] -> [(a, b)]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#zip"
+          },
+          {
+            "name": "zip3",
+            "description": "Joins three lists into one list of triples. If one input list is shorter than the other, the additional elements of the longer lists are discarded.",
+            "typeSig": "[a] -> [b] -> [c] -> [(a, b, c)]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#zip3"
+          },
+          {
+            "name": "zipWith",
+            "description": "Joins two lists into one list by applying a combination function to corresponding pairs of elements. Thus `zip = zipWith (,)`",
+            "typeSig": "(a -> b -> c) -> [a] -> [b] -> [c]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#zipWith"
+          },
+          {
+            "name": "zipWith3",
+            "description": "Joins three lists into one list by applying a combination function to corresponding triples of elements. Thus `zip3 = zipWith3 (,,)`",
+            "typeSig": "(a -> b -> c -> d) -> [a] -> [b] -> [c] -> [d]",
+            "docUrl": "https://www.informatik.uni-kiel.de/~curry/cpm/DOC/base-1.0.0/Prelude.html#zipWith3"
+          }
+        ]
       }
     ]
   }
