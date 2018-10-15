@@ -1,3 +1,9 @@
+## 0.3.0 (2018-10-15)
+
+* Added completions support for type classes
+* Migrated to a new completions format
+* Upgraded to latest `autocomplete-plus` API version
+
 ## 0.2.1 (2017-10-22)
 
 * Fixed an issue where some snippets from the `language-curry` package could not be inserted
