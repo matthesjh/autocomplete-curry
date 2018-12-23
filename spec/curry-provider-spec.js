@@ -1,3 +1,1 @@
-describe('autocomplete-curry', () => {
-  return null;
-});
+describe('autocomplete-curry', () => null);
