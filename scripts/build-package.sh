@@ -26,6 +26,8 @@ if [ "${RUNNER_OS}" = "macOS" ]; then
   export PATH="${PATH}:${GITHUB_WORKSPACE}/atom/${ATOM_APP_NAME}/Contents/Resources/app/apm/node_modules/.bin"
 elif [ "${RUNNER_OS}" = "Linux" ]; then
   curl -s -L "https://atom.io/download/deb?channel=${ATOM_CHANNEL}" -H 'Accept: application/octet-stream' -o "atom-amd64.deb"
+  /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16
+  export DISPLAY=":99"
   dpkg-deb -x atom-amd64.deb "${HOME}/atom"
 
   if [ "${ATOM_CHANNEL}" = "stable" ]; then
