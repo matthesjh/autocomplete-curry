@@ -29,7 +29,7 @@
     }
   },
   "devDependencies": {
-    "eslint": "^7.26.0"
+    "eslint": "^7.27.0"
   },
   "scripts": {
     "lint": "eslint lib/ spec/"
